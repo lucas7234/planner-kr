@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>온라인 웹 플래너</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta http-equiv="X-UA-Compatible" content="ie=edge">
+		<meta name="description" content="Direct Functional Planner">
+		<meta name="keywords" content="planner, online planner">
+		<meta name="author" content="Hyper Lab Inc.">
+		<script src="script/script.js"></script>
+		<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+		<link rel="stylesheet" href="script/style.css">
+	</head>
+	<body onload="console.log(this)">
+		<header>
+			<h1>온라인 웹 플래너</h1>
+			
+			<hr>
+		</header>
+		<main>
+			<fieldset>
+				<legend>계획 입력</legend>
+				<label id="name">계획 이름<sup><span style="color:red;">*</span></sup> <input size="60" placeholder="계획 이름 입력" title="Required"> <small style="color:red; display:none;">You must enter your plan's name.</small></label>
+				<label id="url">URL <input size="60" type="url" placeholder="관련 URL 입력"></label>
+				<label id="time">시작 시간 <input size="60" type="datetime-local" placeholder="Enter Plan Starting Time" onchange="console.log(this.value);"></label>
+				<button onclick="check();">계획 추가</button>
+			</fieldset>
+			<article>
+				<h2>내 계획</h2>
+				<div id="planlist"></div>
+			</article>
+		</main>
+		<footer>
+		<hr>
+			<address><a href="mailto:lucas7234119@hotmail.com">lucas7234119@hotmail.com</a></address>
+			<a href="https://github.com/lucas7234" target="_blank">Github</a> <a href="https://github.com/lucas7234/planner-kr" target="_blank">Source Code</a><a target="_blank" href="https://playentry.org/profile/5a42019380babf2f93d62b53/project?sort=created">Profile</a>
+		</footer>
+	</body>
+</html>
